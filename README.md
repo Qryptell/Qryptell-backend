@@ -37,17 +37,13 @@ The LunarLoom Backend repository houses the backend services that power the Luna
 
 List and briefly describe each microservice contained within this repository, explaining its purpose and functionalities.
 
-* Auth Service
-  Handles user authentication and authorization.
+* Auth Service - Handles user authentication and authorization.
   
-* Email Service
-  Manages email notifications for various events within the application.
+* Email Service - Manages email notifications for various events within the application.
   
-* WebSocket Service
-  Facilitates real-time bidirectional communication between clients.
+* WebSocket Service - Facilitates real-time bidirectional communication between clients.
 
-* Chat Service
-    Orchestrates messages from the WebSocket Service, storing and efficiently relaying them to clients for real-time communication.
+* Chat Service - Orchestrates messages from the WebSocket Service, storing and efficiently relaying them to clients for real-time communication.
 
 ## LICENSE
 

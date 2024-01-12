@@ -1,12 +1,12 @@
 [submodule "mail-service"]
 	path = mail-service
-	url = https://github.com/LoomingLunar/LunarLoom-Mail
+	url = https://github.com/LoomingLunar/LunarLoom-mail-service
 [submodule "websocket-service"]
 	path = websocket-service
 	url = https://github.com/LoomingLunar/LunarLoom-websocket-service
 [submodule "auth-service"]
 	path = auth-service
-	url = https://github.com/LoomingLunar/LunarLoom-auth
+	url = https://github.com/LoomingLunar/LunarLoom-auth-service
 [submodule "chat-service"]
 	path = chat-service
 	url = https://github.com/LoomingLunar/LunarLoom-chat-service
