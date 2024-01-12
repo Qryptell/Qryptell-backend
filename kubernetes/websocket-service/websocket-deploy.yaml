@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lunarloom-websocket-service
+  labels:
+    app: lunarloom-websocket-service
+
+spec:
+  replicas: 2
+  selector: 
+    matchLabels:
+      app: lunarloom-websocket
+  template:
+    metadata:
+      labels:
+        app: lunarloom-websocket
+    spec:
+      containers:
+        - name: lunarloom-websocket
+          image: vaishakhgk/lunarloom-websocket
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: lunarloom-websocket-configmap
