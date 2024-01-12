@@ -7,9 +7,7 @@ LunarLoom Backend is the core repository for the backend services of the LunarLo
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Microservices](#microservices)
-- [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ## Overview
 
@@ -31,6 +29,7 @@ The LunarLoom Backend repository houses the backend services that power the Luna
 * Express
 * Mysql
 * Redis
+* Scylla DB
 * WebSocket
 * JWT (JSON Web Tokens) for authentication
 
@@ -47,6 +46,26 @@ List and briefly describe each microservice contained within this repository, ex
 * WebSocket Service
   Facilitates real-time bidirectional communication between clients.
 
-## License
+* Chat Service
+    Orchestrates messages from the WebSocket Service, storing and efficiently relaying them to clients for real-time communication.
 
-[LICENSE](LICENSE)
+## LICENSE
+
+LunarLoom - End To End Encrypted Chat App.
+
+Copyright (C) 2023  LunarLoom
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+[GPLv3](LICENSE)

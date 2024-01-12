@@ -3,7 +3,10 @@
 	url = https://github.com/LoomingLunar/LunarLoom-Mail
 [submodule "websocket-service"]
 	path = websocket-service
-	url = https://github.com/LoomingLunar/LunarLoom-WebSocketService
+	url = https://github.com/LoomingLunar/LunarLoom-websocket-service
 [submodule "auth-service"]
 	path = auth-service
 	url = https://github.com/LoomingLunar/LunarLoom-auth
+[submodule "chat-service"]
+	path = chat-service
+	url = https://github.com/LoomingLunar/LunarLoom-chat-service
