@@ -23,15 +23,16 @@ The LunarLoom Backend repository houses the backend services that power the Luna
 
 ## Technologies Used
 
-* Node.js
 * Go
+* Node.js
 * Fiber
 * Express
 * Mysql
 * Redis
 * Scylla DB
+* MongoDB
 * WebSocket
-* JWT (JSON Web Tokens) for authentication
+* JWT (JSON Web Tokens)
 
 ## Microservices
 
