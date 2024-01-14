@@ -10,3 +10,6 @@
 [submodule "chat-service"]
 	path = chat-service
 	url = https://github.com/LoomingLunar/LunarLoom-chat-service
+[submodule "user-service"]
+	path = user-service
+	url = https://github.com/LoomingLunar/LunarLoom-user-service
