@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lunarloom-mail-service
+  labels:
+    app: lunarloom-mail-service
+
+spec:
+  replicas: 2
+  selector: 
+    matchLabels:
+      app: lunarloom-mail
+  template:
+    metadata:
+      labels:
+        app: lunarloom-mail
+    spec:
+      containers:
+        - name: lunarloom-mail
+          image: vaishakhgk/lunarloom-mail
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: lunarloom-mail-configmap
