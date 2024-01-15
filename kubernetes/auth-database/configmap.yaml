@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: auth-mysql-configmap
+data:
+  MYSQL_ROOT_PASSWORD: "pass"
+  MYSQL_DATABASE: "lunarloom_auth"
+  MYSQL_USER: "user"
+  MYSQL_PASSWORD: "pass"
