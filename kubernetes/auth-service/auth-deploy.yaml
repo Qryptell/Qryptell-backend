@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lunarloom-auth-service
+  labels:
+    app: lunarloom-auth-service
+
+spec:
+  replicas: 2
+  selector: 
+    matchLabels:
+      app: lunarloom-auth
+  template:
+    metadata:
+      labels:
+        app: lunarloom-auth
+    spec:
+      containers:
+        - name: lunarloom-auth
+          image: vaishakhgk/lunarloom-auth
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: lunarloom-auth-configmap

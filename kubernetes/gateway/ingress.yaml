@@ -14,3 +14,10 @@ spec:
                 name: lunarloom-websocket-service
                 port:
                   number: 8001
+          - path: /auth
+            pathType: Prefix
+            backend:
+              service:
+                name: lunarloom-auth-service
+                port:
+                  number: 8002

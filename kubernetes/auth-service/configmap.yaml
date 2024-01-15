@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: lunarloom-auth-configmap
+data:
+  RABBIT_MQ_URL: "amqp://rabbitmq-service"
+  DB_HOST: "auth-mysql-service"
+  DB_USER: "user"
+  DB_PASSWORD: "pass"
+  CLIENT_URL: "http://localhost:9000"
+  JWT_ACCESS_SECRET: "secret"
+  TEMP_USER_EXPIRY_TIME: 10000

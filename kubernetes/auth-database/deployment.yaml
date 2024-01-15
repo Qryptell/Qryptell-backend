@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth-mysql
+  labels:
+    app: auth-mysql
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: auth-mysql
+  template:
+    metadata:
+      labels:
+        app: auth-mysql
+    spec:
+      volumes:
+      - name: auth-mysql-pv
+        persistentVolumeClaim:
+          claimName: auth-mysql-pvc
+      containers:
+      - name: auth-mysql
+        image: mysql:latest
+        volumeMounts:
+        - name: auth-mysql-pv
+          mountPath: /var/lib/auth-mysql
+        ports:
+        - containerPort: 3306
+          name: auth-mysql
+        envFrom:
+          - configMapRef:
+              name: auth-mysql-configmap
