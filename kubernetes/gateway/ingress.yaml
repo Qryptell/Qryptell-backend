@@ -21,3 +21,17 @@ spec:
                 name: lunarloom-auth-service
                 port:
                   number: 8002
+          - path: /user
+            pathType: Prefix
+            backend:
+              service:
+                name: lunarloom-user-service
+                port:
+                  number: 8003
+          - path: /friend
+            pathType: Prefix
+            backend:
+              service:
+                name: lunarloom-user-service
+                port:
+                  number: 8003
