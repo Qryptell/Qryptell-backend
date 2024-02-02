@@ -5,4 +5,4 @@ metadata:
 data:
   PORT: "9000"
   AUTH_SECRET: "secret"
-  REDIS_IP: "192.168.1.5:6379"
+  REDIS_IP: "redis-service:6379"
