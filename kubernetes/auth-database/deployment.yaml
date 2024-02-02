@@ -14,13 +14,10 @@ spec:
       labels:
         app: auth-mysql
     spec:
-      volumes:
-      - name: auth-mysql-pv
-        persistentVolumeClaim:
-          claimName: auth-mysql-pvc
       containers:
       - name: auth-mysql
         image: mysql:latest
+        imagePullPolicy: IfNotPresent
         volumeMounts:
         - name: auth-mysql-pv
           mountPath: /var/lib/auth-mysql
@@ -30,3 +27,7 @@ spec:
         envFrom:
           - configMapRef:
               name: auth-mysql-configmap
+      volumes:
+      - name: auth-mysql-pv
+        persistentVolumeClaim:
+          claimName: auth-mysql-pvc

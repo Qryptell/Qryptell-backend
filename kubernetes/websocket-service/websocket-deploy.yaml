@@ -18,6 +18,7 @@ spec:
       containers:
         - name: lunarloom-websocket
           image: vaishakhgk/lunarloom-websocket
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
           envFrom:
