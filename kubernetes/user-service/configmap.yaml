@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: lunarloom-user-configmap
+data:
+  PORT: "8000"
+  MONGO_URL: "mongodb://user-mongodb-service"

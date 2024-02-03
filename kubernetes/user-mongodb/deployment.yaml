@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user-mongodb
+  labels:
+    app: user-mongodb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user-mongodb
+  template:
+    metadata:
+      labels:
+        app: user-mongodb
+    spec:
+      containers:
+      - name: user-mongodb
+        image: mongo:latest
+        imagePullPolicy: IfNotPresent
+        volumeMounts:
+        - name: user-mongodb-pv
+          mountPath: /var/lib/user-mongodb
+        ports:
+        - containerPort: 3306
+          name: user-mongodb
+        envFrom:
+          - configMapRef:
+              name: user-mongodb-configmap
+      volumes:
+      - name: user-mongodb-pv
+        persistentVolumeClaim:
+          claimName: user-mongodb-pvc

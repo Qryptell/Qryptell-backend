@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lunarloom-user-service
+  labels:
+    app: lunarloom-user-service
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lunarloom-user
+  template:
+    metadata:
+      labels:
+        app: lunarloom-user
+    spec:
+      containers:
+        - name: lunarloom-user
+          image: vaishakhgk/lunarloom-user
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: lunarloom-user-configmap

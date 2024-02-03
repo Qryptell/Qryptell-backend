@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: user-mongodb-configmap
+data:
+  MONGO_ROOT_USERNAME: admin
+  MONGO_ROOT_PASSWORD: password
+  MONGO_USERNAME: user
+  MONGO_PASSWORD: password
