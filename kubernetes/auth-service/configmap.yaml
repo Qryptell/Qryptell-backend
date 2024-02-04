@@ -10,3 +10,4 @@ data:
   CLIENT_URL: "http://localhost:3000"
   JWT_ACCESS_SECRET: "secret"
   PORT: "4000"
+  USER_SERVICE_URL: "http://lunarloom-user-service:8003"
