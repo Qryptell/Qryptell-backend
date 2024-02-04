@@ -18,7 +18,6 @@ spec:
       containers:
         - name: lunarloom-mail
           image: vaishakhgk/lunarloom-mail
-          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
           envFrom:

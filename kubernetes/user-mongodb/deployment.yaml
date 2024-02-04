@@ -17,7 +17,6 @@ spec:
       containers:
       - name: user-mongodb
         image: mongo:latest
-        imagePullPolicy: IfNotPresent
         volumeMounts:
         - name: user-mongodb-pv
           mountPath: /var/lib/user-mongodb

@@ -18,7 +18,6 @@ spec:
       containers:
         - name: lunarloom-auth
           image: vaishakhgk/lunarloom-auth
-          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
           envFrom:

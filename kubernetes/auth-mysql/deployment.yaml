@@ -17,7 +17,6 @@ spec:
       containers:
       - name: auth-mysql
         image: mysql:latest
-        imagePullPolicy: IfNotPresent
         volumeMounts:
         - name: auth-mysql-pv
           mountPath: /var/lib/auth-mysql

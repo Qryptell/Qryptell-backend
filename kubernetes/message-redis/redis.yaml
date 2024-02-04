@@ -14,7 +14,6 @@ spec:
       containers:
         - name: redis
           image: redis:latest
-          imagePullPolicy: IfNotPresent
           ports:
             - name: redis
               protocol: TCP
