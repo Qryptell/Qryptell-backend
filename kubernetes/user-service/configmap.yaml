@@ -4,4 +4,6 @@ metadata:
   name: lunarloom-user-configmap
 data:
   PORT: "8000"
+  SECRET: "secret"
   MONGO_URL: "mongodb://user-mongodb-service"
+  CLIENT_URL: "http://localhost:3000"
