@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: lunarloom-user-configmap
+  name: qryptell-user-configmap
 data:
   PORT: "8000"
   SECRET: "secret"

@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lunarloom-websocket-service
+  name: qryptell-websocket-service
   labels:
-    app: lunarloom-websocket-service
+    app: qryptell-websocket-service
 
 spec:
   replicas: 1
   selector: 
     matchLabels:
-      app: lunarloom-websocket
+      app: qryptell-websocket
   template:
     metadata:
       labels:
-        app: lunarloom-websocket
+        app: qryptell-websocket
     spec:
       containers:
-        - name: lunarloom-websocket
-          image: vaishakhgk/lunarloom-websocket
+        - name: qryptell-websocket
+          image: vaishakhgk/qryptell-websocket
           ports:
             - containerPort: 8080
           envFrom:
             - configMapRef:
-                name: lunarloom-websocket-configmap
+                name: qryptell-websocket-configmap

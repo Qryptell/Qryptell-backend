@@ -1,6 +1,6 @@
-# LunarLoom Backend
+# Qryptell Backend
 
-LunarLoom Backend is the core repository for the backend services of the LunarLoom chat application. This repository contains various microservices responsible for managing user authentication, message handling, notifications, and other backend functionalities.
+Qryptell Backend is the core repository for the backend services of the Qryptell chat application. This repository contains various microservices responsible for managing user authentication, message handling, notifications, and other backend functionalities.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -11,7 +11,7 @@ LunarLoom Backend is the core repository for the backend services of the LunarLo
 
 ## Overview
 
-The LunarLoom Backend repository houses the backend services that power the LunarLoom chat application. It comprises multiple microservices that collectively handle various functionalities required for a real-time messaging platform.
+The Qryptell Backend repository houses the backend services that power the Qryptell chat application. It comprises multiple microservices that collectively handle various functionalities required for a real-time messaging platform.
 
 ## Features
 
@@ -48,9 +48,9 @@ List and briefly describe each microservice contained within this repository, ex
 
 ## LICENSE
 
-LunarLoom - End To End Encrypted Chat App.
+Qryptell - End To End Encrypted Chat App.
 
-Copyright (C) 2023  LunarLoom
+Copyright (C) 2023  Qryptell
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

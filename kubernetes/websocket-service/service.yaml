@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: lunarloom-websocket-service
+  name: qryptell-websocket-service
 spec:
   selector:
-    app: lunarloom-websocket
+    app: qryptell-websocket
   type: ClusterIP
   ports:
     - port: 8001

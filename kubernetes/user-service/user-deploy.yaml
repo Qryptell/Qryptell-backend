@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lunarloom-user-service
+  name: qryptell-user-service
   labels:
-    app: lunarloom-user-service
+    app: qryptell-user-service
 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: lunarloom-user
+      app: qryptell-user
   template:
     metadata:
       labels:
-        app: lunarloom-user
+        app: qryptell-user
     spec:
       containers:
-        - name: lunarloom-user
-          image: vaishakhgk/lunarloom-user
+        - name: qryptell-user
+          image: vaishakhgk/qryptell-user
           ports:
             - containerPort: 8080
           envFrom:
             - configMapRef:
-                name: lunarloom-user-configmap
+                name: qryptell-user-configmap

@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lunarloom-auth-service
+  name: qryptell-auth-service
   labels:
-    app: lunarloom-auth-service
+    app: qryptell-auth-service
 
 spec:
   replicas: 1
   selector: 
     matchLabels:
-      app: lunarloom-auth
+      app: qryptell-auth
   template:
     metadata:
       labels:
-        app: lunarloom-auth
+        app: qryptell-auth
     spec:
       containers:
-        - name: lunarloom-auth
-          image: vaishakhgk/lunarloom-auth
+        - name: qryptell-auth
+          image: vaishakhgk/qryptell-auth
           ports:
             - containerPort: 8080
           envFrom:
             - configMapRef:
-                name: lunarloom-auth-configmap
+                name: qryptell-auth-configmap

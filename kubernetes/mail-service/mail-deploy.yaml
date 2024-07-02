@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lunarloom-mail-service
+  name: qryptell-mail-service
   labels:
-    app: lunarloom-mail-service
+    app: qryptell-mail-service
 
 spec:
   replicas: 1
   selector: 
     matchLabels:
-      app: lunarloom-mail
+      app: qryptell-mail
   template:
     metadata:
       labels:
-        app: lunarloom-mail
+        app: qryptell-mail
     spec:
       containers:
-        - name: lunarloom-mail
-          image: vaishakhgk/lunarloom-mail
+        - name: qryptell-mail
+          image: vaishakhgk/qryptell-mail
           ports:
             - containerPort: 8080
           envFrom:
             - configMapRef:
-                name: lunarloom-mail-configmap
+                name: qryptell-mail-configmap

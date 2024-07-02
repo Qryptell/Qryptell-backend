@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: lunarloom-websocket-configmap
+  name: qryptell-websocket-configmap
 data:
   PORT: "9000"
   AUTH_SECRET: "secret"

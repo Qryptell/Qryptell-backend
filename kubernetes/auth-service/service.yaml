@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: lunarloom-auth-service
+  name: qryptell-auth-service
 spec:
   selector:
-    app: lunarloom-auth
+    app: qryptell-auth
   type: ClusterIP
   ports:
     - port: 8002
